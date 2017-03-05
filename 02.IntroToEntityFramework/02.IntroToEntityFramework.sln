@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SoftUniDBExercises", "01.SoftUniDBExercises\01.SoftUniDBExercises.csproj", "{D9B60008-26C7-4B17-A02E-445EA84B58D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GringottsDBExercises", "02.GringottsDBExercises\02.GringottsDBExercises.csproj", "{16F97254-7CD1-41F3-A542-99548205848E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B60008-26C7-4B17-A02E-445EA84B58D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B60008-26C7-4B17-A02E-445EA84B58D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B60008-26C7-4B17-A02E-445EA84B58D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B60008-26C7-4B17-A02E-445EA84B58D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F97254-7CD1-41F3-A542-99548205848E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F97254-7CD1-41F3-A542-99548205848E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F97254-7CD1-41F3-A542-99548205848E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F97254-7CD1-41F3-A542-99548205848E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
