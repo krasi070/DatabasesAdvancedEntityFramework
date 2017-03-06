@@ -15,6 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.PlanckConstant", "05.Pla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.MathUtilities", "06.MathUtilities\06.MathUtilities.csproj", "{6A20D4CF-276C-4287-B0A5-005F33906439}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.GringottsDB", "07.GringottsDB\07.GringottsDB.csproj", "{E2C951B5-B1C7-4D31-888A-84346BB534B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.CreateUser", "08.CreateUser\08.CreateUser.csproj", "{EAE959E5-1400-46D4-9D99-3AF314A5C430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.HospitalDatabase", "09.HospitalDatabase\09.HospitalDatabase.csproj", "{6EF5A7F3-D4C0-40F5-A746-F874C9F4673F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.HospitalDatabaseModification", "10.HospitalDatabaseModification\10.HospitalDatabaseModification.csproj", "{2D226B07-2937-4CA7-9CF6-9A3E4FB35648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.UsersByEmailAndRemoveInactiveUsers", "11.UsersByEmailAndRemoveInactiveUsers\11.UsersByEmailAndRemoveInactiveUsers.csproj", "{2F28BC90-BCF8-4509-BC66-F8EB7281575F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +55,26 @@ Global
 		{6A20D4CF-276C-4287-B0A5-005F33906439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A20D4CF-276C-4287-B0A5-005F33906439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A20D4CF-276C-4287-B0A5-005F33906439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C951B5-B1C7-4D31-888A-84346BB534B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C951B5-B1C7-4D31-888A-84346BB534B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C951B5-B1C7-4D31-888A-84346BB534B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C951B5-B1C7-4D31-888A-84346BB534B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE959E5-1400-46D4-9D99-3AF314A5C430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE959E5-1400-46D4-9D99-3AF314A5C430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE959E5-1400-46D4-9D99-3AF314A5C430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE959E5-1400-46D4-9D99-3AF314A5C430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF5A7F3-D4C0-40F5-A746-F874C9F4673F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF5A7F3-D4C0-40F5-A746-F874C9F4673F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF5A7F3-D4C0-40F5-A746-F874C9F4673F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF5A7F3-D4C0-40F5-A746-F874C9F4673F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D226B07-2937-4CA7-9CF6-9A3E4FB35648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D226B07-2937-4CA7-9CF6-9A3E4FB35648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D226B07-2937-4CA7-9CF6-9A3E4FB35648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D226B07-2937-4CA7-9CF6-9A3E4FB35648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F28BC90-BCF8-4509-BC66-F8EB7281575F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F28BC90-BCF8-4509-BC66-F8EB7281575F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F28BC90-BCF8-4509-BC66-F8EB7281575F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F28BC90-BCF8-4509-BC66-F8EB7281575F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
