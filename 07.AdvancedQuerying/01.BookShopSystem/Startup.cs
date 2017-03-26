@@ -4,12 +4,14 @@
     using System.Linq;
     using Data;
     using Models;
+    using System.Data.SqlClient;
+    using System.Data;
 
     public class Startup
     {
         public static void Main()
         {
-            PrintNumberOfDeletedBooks();
+            PrintNumberOfBooksByAuthor();
         }
 
         // Problem 01 - Books Titles by Age Restriction
@@ -300,19 +302,46 @@
             using (var context = new BookShopContext())
             {
                 var books = context.Books
-                    .Where(b => b.Copies < 9000)
+                    .Where(b => b.Copies < 4200)
                     .ToList();
-
-                foreach (var book in books)
-                {
-                    
-                }
 
                 context.Books.RemoveRange(books);
 
                 context.SaveChanges();
 
                 Console.WriteLine(books.Count());
+            }
+        }
+
+        // Problem 16 - Stored Procedure
+        // CREATE PROCEDURE usp_GetAuthorBooksCount
+        //     @FirstName nvarchar(MAX), 
+        //	   @LastName nvarchar(MAX),
+        //	   @Result int OUT
+        // AS
+        // BEGIN
+        //     SET @Result = (
+        //         SELECT COUNT(*) AS COUNT
+        //         FROM Authors AS a
+        //         INNER JOIN Books AS b
+        //         ON b.AuthorId = a.Id
+        //         WHERE a.FirstName = @FirstName AND a.LastName = @LastName)
+        // END
+        private static void PrintNumberOfBooksByAuthor()
+        {
+            Console.Write("First name: ");
+            SqlParameter firstName = new SqlParameter("@FirstName", Console.ReadLine());
+            Console.Write("Last name: ");
+            SqlParameter lastName = new SqlParameter("@LastName", Console.ReadLine());
+            SqlParameter result = new SqlParameter();
+            result.ParameterName = "@Result";
+            result.Direction = ParameterDirection.Output;
+            result.SqlDbType = SqlDbType.Int;
+            using (var context = new BookShopContext())
+            {
+                context.Database
+                    .ExecuteSqlCommand("EXECUTE usp_GetAuthorBooksCount @FirstName, @LastName, @Result output", result, firstName, lastName);
+                Console.WriteLine($"{firstName.Value} {lastName.Value} has written {result.Value} books");
             }
         }
     }

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BookShopSystem", "01.BookShopSystem\01.BookShopSystem.csproj", "{29BDCE14-440C-4A1E-9C77-81CB21E62654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SoftUni", "02.SoftUni\02.SoftUni.csproj", "{47997502-EEAC-4210-9444-2F70C1FB7AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Gringotts", "03.Gringotts\03.Gringotts.csproj", "{94FF3031-DC1C-47FF-9B77-FF03417F536A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{29BDCE14-440C-4A1E-9C77-81CB21E62654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29BDCE14-440C-4A1E-9C77-81CB21E62654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29BDCE14-440C-4A1E-9C77-81CB21E62654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47997502-EEAC-4210-9444-2F70C1FB7AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47997502-EEAC-4210-9444-2F70C1FB7AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47997502-EEAC-4210-9444-2F70C1FB7AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47997502-EEAC-4210-9444-2F70C1FB7AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FF3031-DC1C-47FF-9B77-FF03417F536A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FF3031-DC1C-47FF-9B77-FF03417F536A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FF3031-DC1C-47FF-9B77-FF03417F536A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FF3031-DC1C-47FF-9B77-FF03417F536A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
