@@ -17,7 +17,7 @@
         {
             InitMappers();
 
-            PrintCategories();
+            PrintUsersWithSoldProducts();
         }
 
         private static void InitMappers()
@@ -102,9 +102,39 @@
         }
 
         // Query 4 - Users and Products
-        private static void PrintUsers()
+        private static void PrintUsersWithSoldProducts()
         {
+            using (var context = new ProductShopContext())
+            {
+                var usersWithSoldProducts = new
+                {
+                    UsersCount = context.Users
+                        .Where(u => u.ProductsSold.Count > 0)
+                        .Count(),
+                    Users = context.Users
+                        .Where(u => u.ProductsSold.Count > 0)
+                        .Select(u => new
+                        {
+                            u.FirstName,
+                            u.LastName,
+                            u.Age,
+                            SoldProducts = new
+                            {
+                                Count = u.ProductsSold.Count,
+                                Products = u.ProductsSold
+                                    .Select(p => new
+                                    {
+                                        p.Name,
+                                        p.Price
+                                    })
+                            }
+                        })
+                        .OrderByDescending(u => u.SoldProducts.Count)
+                        .ThenBy(u => u.LastName)
+                };
 
+                Console.WriteLine(JsonConvert.SerializeObject(usersWithSoldProducts, Formatting.Indented));
+            }
         }
     }
 }

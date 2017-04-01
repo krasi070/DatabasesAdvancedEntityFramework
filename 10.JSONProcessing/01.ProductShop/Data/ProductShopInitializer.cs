@@ -14,9 +14,9 @@
     {
         protected override void Seed(ProductShopContext context)
         {
-            string usersJson = File.ReadAllText("../../Import-Json-Resources/users.json");
-            string categoriesJson = File.ReadAllText("../../Import-Json-Resources/categories.json");
-            string productsJson = File.ReadAllText("../../Import-Json-Resources/products.json");
+            string usersJson = File.ReadAllText("../../ProductShop-Data/users.json");
+            string categoriesJson = File.ReadAllText("../../ProductShop-Data/categories.json");
+            string productsJson = File.ReadAllText("../../ProductShop-Data/products.json");
 
             context.Users.AddRange(JsonConvert.DeserializeObject<User[]>(usersJson));
             context.Categories.AddRange(JsonConvert.DeserializeObject<Category[]>(categoriesJson));

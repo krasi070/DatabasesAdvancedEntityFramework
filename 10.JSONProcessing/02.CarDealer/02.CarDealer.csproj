@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C977C3C-FA8F-48B2-80B6-CC76554259C7}</ProjectGuid>
+    <ProjectGuid>{5229F323-5DA3-4C58-A1A6-AFAE57EA4355}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01.ProductShop</RootNamespace>
-    <AssemblyName>01.ProductShop</AssemblyName>
+    <RootNamespace>_02.CarDealer</RootNamespace>
+    <AssemblyName>02.CarDealer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -62,25 +58,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\ProductShopContext.cs" />
-    <Compile Include="Data\ProductShopInitializer.cs" />
-    <Compile Include="DTOs\CategoryDto.cs" />
-    <Compile Include="DTOs\ProductDto.cs" />
-    <Compile Include="DTOs\SellerDto.cs" />
-    <Compile Include="DTOs\SoldProductDto.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Data\CarDealerContext.cs" />
+    <Compile Include="Data\CarDealerInitializer.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Part.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ProductShop-Data\categories.json" />
-    <None Include="ProductShop-Data\products.json" />
-    <None Include="ProductShop-Data\users.json" />
+    <None Include="CarDealer-Data\cars.json" />
+    <None Include="CarDealer-Data\customers.json" />
+    <None Include="CarDealer-Data\parts.json" />
+    <None Include="CarDealer-Data\suppliers.json" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
